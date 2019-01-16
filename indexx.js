@@ -37,6 +37,15 @@ document.addEventListener("DOMContentLoaded", function(){
 	changeDam.addEventListener("input",changeDam);
 
 
+	var changemou = document.getElementById("mouseTouchRadius");
+	function changemou(event){
+		let mouset = document.getElementById("mouseTouchRadius").value;
+		balls1.setMou(mouset);
+		console.log(mouset);
+	}
+	changemou.addEventListener("input",changemou);
+
+
 
 
 	var Fchange = document.getElementById("Fchange");
