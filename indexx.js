@@ -17,6 +17,8 @@ document.addEventListener("DOMContentLoaded", function(){
 	}
 	changeNum.addEventListener("input",changeNumber);
 
+
+
 	var changegrav = document.getElementById("gravity");
 	function changegrav(event){
 		let gravi = document.getElementById("gravity").value;
@@ -24,6 +26,15 @@ document.addEventListener("DOMContentLoaded", function(){
 		console.log(gravi);
 	}
 	changegrav.addEventListener("input",changegrav);
+
+
+	var changeDam = document.getElementById("dampingFactor");
+	function changeDam(event){
+		let damping = document.getElementById("dampingFactor").value;
+		balls1.setDamp(damping);
+		console.log(damping);
+	}
+	changeDam.addEventListener("input",changeDam);
 
 
 
