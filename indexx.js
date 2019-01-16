@@ -17,6 +17,17 @@ document.addEventListener("DOMContentLoaded", function(){
 	}
 	changeNum.addEventListener("input",changeNumber);
 
+	var changegrav = document.getElementById("gravity");
+	function changegrav(event){
+		let gravi = document.getElementById("gravity").value;
+		balls1.setGra(gravi);
+		console.log(gravi);
+	}
+	changegrav.addEventListener("input",changegrav);
+
+
+
+
 	var Fchange = document.getElementById("Fchange");
 
 	Fchange.addEventListener("submit", function(event){event.preventDafult()});
